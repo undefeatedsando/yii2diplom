@@ -1,0 +1,386 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+* {
+  color: white;
+}
+.red {
+  background-color: #ab1d26;
+  cursor: pointer;
+}
+.red:hover {
+  background-color: #890004;
+}
+.blue {
+  background-color: #387e94;
+  cursor: pointer;
+}
+.blue:hover {
+  background-color: #165c72;
+}
+.dark-blue {
+  background-color: #283852;
+  cursor: pointer;
+}
+.dark-blue:hover {
+  background-color: #061630;
+}
+.grey {
+  background-color: #7d7c7c;
+  cursor: pointer;
+}
+.grey:hover {
+  background-color: #5b5a5a;
+}
+.lighter-bg {
+  background-color: #283853;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  background-color: #50607a;
+  display: flex;
+  justify-content: center;
+}
+.footer-list {
+  list-style: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.footer-list-points > a {
+  color: #777;
+  text-decoration: none;
+}
+.footer-list-points > a:hover {
+  color: #565;
+}
+.carousel-inner > .item > img {
+  display: block;
+  border-radius: 10px;
+  max-width: 180px;
+  height: 200px;
+  object-fit: cover;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+  font-size: 20px;
+  margin-top: 95px;
+}
+#designer-carousel {
+  font-family: "Didact Gothic";
+  text-align: center;
+}
+.designer-carousel__img {
+  /*LOOK UP TO RESET*/
+}
+.designer-carousel__name {
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+.designer-carousel__href {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #387e94;
+  font-size: 1.7em;
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.designer-carousel__href:hover {
+  text-decoration: none;
+  color: #aac;
+  background-color: #165c72;
+}
+.grid-wrapper {
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto 80px auto;
+  grid-template-rows: fit-content(200px) fit-content(200px) fit-content(200px) fit-content(200px) fit-content(200px) fit-content(200px);
+}
+.item {
+  padding: 20px 10px;
+}
+.item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+.item:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.item:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.item:nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item:nth-child(6) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item:nth-child(6):hover {
+  background-color: #7d7c7c;
+}
+.item:nth-child(7) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item:nth-child(8) {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.item:nth-child(9) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.item:nth-child(10) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.item:nth-child(11) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.item:nth-child(12) {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+body {
+  background-color: #232633;
+}
+.sample {
+  min-width: 200px;
+  min-height: 100px;
+}
+.wrapper-top {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-top #designer-carousel {
+  margin-left: 50px;
+  flex-basis: 1;
+  height: 400px;
+}
+.wrapper-top #menu {
+  flex-basis: 2;
+}
+h2,
+h3 {
+  font-size: 2em;
+}
+.section-header {
+  margin: 0.5em 0em;
+  font-size: 3em;
+}
+.wrapper-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.wrapper-bottom .news {
+  padding-top: 5em;
+}
+.wrapper-bottom .news-img {
+  margin-top: 2em;
+  width: 100%;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.wrapper-bottom .news-header {
+  color: darkolivegreen;
+  margin-bottom: -3em;
+  position: relative;
+  z-index: 1;
+  margin-left: 3em;
+}
+.wrapper-bottom .news-text {
+  margin-top: 2em;
+}
+#news > .coontainer {
+  padding: 5em;
+  padding-top: 0em;
+}
+.button-main {
+width: 80%;
+  display: inline-block;
+  margin: 0px 0px 20px 50px;
+  border-radius: 10px;
+  padding: 10px;
+font-family: "Didact Gothic";}
+  a.button-main{
+	  color:white;
+	  text-decoration:none;
+  }
+
+  input[type="submit"], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    border-width: 0px;
+}

@@ -1,0 +1,557 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 80%;
+  margin: 20px auto;
+}
+.top-menu a {
+  flex: 1;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: #cfcfcf;
+  display: block;
+  width: auto;
+}
+.top-menu a:first-child {
+  border-radius: 1.5em 0% 0% 1.5em;
+}
+.top-menu a:last-child {
+  background: #ab1d26;
+  border-radius: 0% 1.5em 1.5em 0%;
+}
+.my-menu {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-menu ul {
+  display: inline;
+}
+.status {
+  display: flex;
+  background-color: #cfcfcf;
+  padding: 1em;
+  padding-left: 3em;
+}
+.status-info {
+  display: flex;
+}
+.status-info-img {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.status-info-personal {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-family: "Poiret One";
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.status-info-personal-name {
+  font-size: 2em;
+}
+.status-info-personal-city {
+  font-size: 1.5em;
+}
+.status-navbar {
+  display: inline-block;
+  margin: 0.5em;
+  margin-left: 150px;
+  min-width: 300px;
+}
+.status-navbar-link {
+  font-family: "Didact Gothic";
+  font-size: 1.3em;
+  color: #777777;
+  text-decoration: none;
+  padding: 0.1em;
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  border-bottom: 2px solid #777777;
+}
+.status-navbar-link:hover {
+  text-decoration: none;
+}
+.status-navbar-link:nth-child(1).active,
+.status-navbar-link:nth-child(1):hover {
+  color: #ab1d26;
+  border-bottom: 2px solid #f0222f;
+}
+.status-navbar-link:nth-child(2).active,
+.status-navbar-link:nth-child(2):hover {
+  color: #b28600;
+  border-bottom: 2px solid #e6b317;
+}
+.status-navbar-link:nth-child(3).active,
+.status-navbar-link:nth-child(3):hover {
+  color: #46679e;
+  border-bottom: 2px solid #4ba0c4;
+}
+.status-navbar-link.red {
+  color: red;
+  border-bottom: 2px solid red;
+}
+@font-face {
+  font-family: 'coupon';
+  src: url('../fonts/coupon_icon_font/coupon.eot?upf5ef');
+  src: url('../fonts/coupon_icon_font/coupon.eot?upf5ef#iefix') format('embedded-opentype'), url('../fonts/coupon_icon_font/coupon.ttf?upf5ef') format('truetype'), url('../fonts/coupon_icon_font/coupon.woff?upf5ef') format('woff'), url('../fonts/coupon_icon_font/coupon.svg?upf5ef#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.coupon-card__icon {
+  font-family: 'coupon';
+  color: #8b8383;
+}
+/*COLORS OF COUPON ICONS*/
+.project,
+.meeting {
+  color: #3ea33c;
+}
+.ads,
+.grade {
+  color: #b28600;
+}
+.account,
+.global,
+.investment {
+  color: #6572ab;
+}
+.contract,
+.grant,
+.supply {
+  color: #c65959;
+}
+.account::before {
+  content: "\f1ec";
+}
+.ads::before {
+  content: "\e802";
+}
+.contract::before {
+  content: "\f2b5";
+}
+.education::before {
+  content: "\f19d";
+}
+.factory::before {
+  content: "\e805";
+}
+.global::before {
+  content: "\e801";
+}
+.grade::before {
+  content: "\f0a3";
+}
+.grant::before {
+  content: "\f135";
+}
+.intellectual::before {
+  content: "\f1f9";
+}
+.investment::before {
+  content: "\f295";
+}
+.meeting::before {
+  content: "\e800";
+}
+.project::before {
+  content: "\f201";
+}
+.reference::before {
+  content: "\e804";
+}
+.supply::before {
+  content: "\e803";
+}
+.coupon-card {
+  background-color: #cfcfcf;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  height: 10em;
+}
+.coupon-card__icon {
+  width: 40px;
+  margin-right: 10px;
+  height: 40px;
+  margin-top: -10px;
+  font-size: 2.5em;
+}
+.coupon-card__description__header {
+  font-size: 1.3em;
+}
+input,
+label {
+  margin-top: 10px;
+  font-family: "Didact Gothic";
+}
+label > span {
+  font-size: 16px;
+}
+textarea,
+textarea:focus,
+input[type=text],
+input[type=text]:focus {
+  font-family: 'Didact Gothic';
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+/*INPUT-TEXT*/
+input[type=text] {
+  border-bottom: 2px solid #999;
+  background-color: transparent;
+}
+input[type=text]:focus {
+  border-bottom: 2px solid #555;
+}
+/*SELECT*/
+select {
+  width: 240px;
+  float: right;
+  background-color: #cfcfcf;
+  outline: none;
+}
+/*TEXTAREA*/
+textarea {
+  background-color: #cfcfcf;
+  height: 100px;
+  resize: none;
+}
+textarea:focus {
+  background-color: #adadad;
+}
+/*BUTTONS*/
+input[type=submit] {
+  background: none;
+  border: none;
+}
+input[type=submit].button__red {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: white;
+  background-color: #ab1d26;
+}
+input[type=submit].button__red:hover {
+  background: #890004;
+}
+input[type=submit].button__yellow {
+  font-size: 1.3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: black;
+  background-color: #e6b317;
+}
+input[type=submit].button__yellow:hover {
+  background: #f7c428;
+}
+/*CHECKBOXES*/
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  /* Hide the browser's default checkbox */
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.container:last-of-type {
+  margin-bottom: 20px;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #E9E9E9;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ededed;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #22aa44;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.footer {
+  width: 100%;
+  background-color: #cfcfcf;
+  display: flex;
+  justify-content: center;
+}
+.footer-list {
+  list-style: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.footer-list-points > a {
+  color: #777;
+  text-decoration: none;
+}
+.footer-list-points > a:hover {
+  color: #565;
+}
+body {
+  background: #e9e9e9;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+.with-margins {
+  margin: 15px auto;
+}
+.left-button {
+  margin: 0.5em;
+}
+.checkboxes {
+  width: 20%;
+  min-width: 250px;
+  font-family: "Didact Gothic";
+  margin-right: 20px;
+}
+.checkboxes__header {
+  background-color: #cfcfcf;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  min-width: 150px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.3em;
+  text-align: right;
+  padding: 0.3em;
+}
+.checkboxes__header:hover {
+  background-color: #e6b317;
+}
+.checkboxes__list {
+  background-color: #cfcfcf;
+  float: right;
+  margin-top: 0px;
+  width: 70%;
+}
+.checkboxes__list__choose_all {
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #ededed;
+  border-left: 4px solid #cfcfcf;
+}
+.checkboxes__list__choose_all:hover {
+  background-color: #649154;
+  color: white;
+}
+.result {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  margin-top: 2em;
+}
+.result > * {
+  flex-basis: 40%;
+}
+@media only screen and (max-width: 900px) {
+  .result > * {
+    flex-basis: 90%;
+  }
+}
+.no-result {
+  font-family: "Didact Gothic";
+  font-size: 5em;
+  line-height: 0.9em;
+  text-align: center;
+  color: #aaa;
+  background-color: #dadada;
+  height: 4em;
+  margin: 1em auto;
+  padding: 0.2em 0.6em;
+}
